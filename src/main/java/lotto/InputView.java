@@ -19,6 +19,7 @@ public class InputView {
         System.out.println("당첨 번호를 입력해 주세요.");
         String input = Console.readLine();
 
+
         int[] nums = Arrays.stream(input.split("\\s*,\\s*"))
                 .map(String::trim)
                 .mapToInt(this::parseInt)
@@ -27,6 +28,7 @@ public class InputView {
         if (nums.length != 6) {
             throw new IllegalArgumentException("[ERROR] 당첨 번호는 6개여야 합니다.");
         }
+
 
         boolean[] seen = new boolean[46];
         for (int n : nums) {

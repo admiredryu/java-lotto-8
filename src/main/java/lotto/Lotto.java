@@ -21,12 +21,16 @@ public class Lotto {
                 throw new IllegalArgumentException("[ERROR] 로또 번호는 1~45 범위여야 합니다.");
             }
         }
-        Collections.sort(numbers);
+        Collections.sort(numbers); // 출력 예시에 맞춰 오름차순
         this.numbers = numbers;
     }
 
-    public List<Integer> getNumbers() { return numbers; }
+    public List<Integer> getNumbers() {
+        return numbers;
+    }
 
     @Override
-    public String toString() { return numbers.toString(); }
+    public String toString() {
+        return numbers.toString();
+    }
 }

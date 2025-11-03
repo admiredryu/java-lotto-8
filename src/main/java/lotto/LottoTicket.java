@@ -16,7 +16,7 @@ public class LottoTicket {
         List<Lotto> list = new ArrayList<>();
         for (int i = 0; i < count; i++) {
             List<Integer> nums = Randoms.pickUniqueNumbersInRange(1, 45, 6);
-            list.add(new Lotto(nums));
+            list.add(new Lotto(nums)); // 검증/정렬은 Lotto 생성자에서 수행
         }
         return new LottoTicket(list);
     }

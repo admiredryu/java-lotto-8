@@ -13,9 +13,9 @@ public class LottoMachine {
         outputView.printPurchasedLotto(ticket);
 
         int[] winningNumbers = inputView.inputWinningNumbers();
-        int bonus = inputView.inputBonusNumber(winningNumbers); // ← 변경 포인트
+        int bonus = inputView.inputBonusNumber(winningNumbers);
 
-        WinnerChecker checker = new WinnerChecker(winningNumbers, bonus, money); // spentMoney 전달
+        WinnerChecker checker = new WinnerChecker(winningNumbers, bonus, money);
         checker.check(ticket);
         outputView.printResult(checker);
     }
