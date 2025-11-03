@@ -57,15 +57,10 @@ public class WinnerChecker {
         };
     }
 
-    public int getCount(int n) {
-        return matchCount.get(n);
-    }
+    public int getCount(int n) { return matchCount.get(n); }
 
-    public int getCountBonus() {
-        return bonusMatch;
-    }
+    public int getCountBonus() { return bonusMatch; }
 
-    // 소수점 첫째 자리 반올림
     public double getProfitRate() {
         if (spentMoney <= 0) return 0.0;
         double rate = (double) totalPrize / spentMoney * 100.0;
