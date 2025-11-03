@@ -21,7 +21,7 @@ public class Lotto {
                 throw new IllegalArgumentException("[ERROR] 로또 번호는 1~45 범위여야 합니다.");
             }
         }
-        Collections.sort(numbers);          // 출력 예시에 맞게 오름차순 정렬
+        Collections.sort(numbers);
         this.numbers = numbers;
     }
 
